@@ -1,0 +1,12 @@
+logging:
+  level: INFO
+  file: logs/project.log
+
+temperature_simulator:
+  min_temp: 15
+  max_temp: 25
+  interval: 10
+  file_path: "temperature_data.txt"
+
+temperature_client:
+  poll_interval: 2

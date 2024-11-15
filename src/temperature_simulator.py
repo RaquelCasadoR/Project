@@ -12,7 +12,7 @@ class TemperatureSimulator:
 
     def generate_temperature(self):
         temperature = random.uniform(self.min_temp, self.max_temp)
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S') 
         logging.info(f"Generated temperature: {temperature:.2f}°C at {timestamp}")
         return {"timestamp": timestamp, "temperature": temperature}
 
